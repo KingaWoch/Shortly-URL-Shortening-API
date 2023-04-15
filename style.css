@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: center;
   padding-inline: 1rem;
+  overflow: hidden;
 }
 
 img,
@@ -34,6 +35,8 @@ picture {
 .page {
   max-width: 1100px;
 }
+
+/* HEADER */
 
 header {
   display: flex;
@@ -73,9 +76,6 @@ button {
   border: none;
   cursor: pointer;
   font-weight: 700;
-}
-
-.header_buttons-wrapper button {
   width: 100px;
   height: 40px;
   border-radius: 2rem;
@@ -83,11 +83,65 @@ button {
   color: white;
 }
 
-.header_buttons-wrapper button:hover {
+button:hover {
   opacity: 0.6;
 }
 
 #login-btn {
   background-color: transparent;
   color: var(--Grayish-Violet);
+}
+
+#login-btn:hover {
+  color: var(--Very-Dark-Violet);
+  opacity: 1;
+}
+
+/* MAIN */
+
+/* FIRST SECTION */
+
+.heading-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  height: 482px;
+  position: relative;
+}
+
+.heading-section img {
+  position: absolute;
+  top: 0;
+  right: -15rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: var(--Very-Dark-Blue);
+  line-height: 1.2;
+}
+
+p {
+  color: var(--Grayish-Violet);
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+.get-started-btn {
+  width: 200px;
+  height: 50px;
+  font-size: var(--fs);
+  margin-top: 2rem;
+}
+
+/* FOOTER */
+
+.attribution p {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--Cyan);
 }
