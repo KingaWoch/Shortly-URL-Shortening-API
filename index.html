@@ -58,6 +58,7 @@
               <form>
                 <div class="input-field">
                   <input
+                    id="link-input"
                     type="text"
                     placeholder="Shorten a link here..."
                   /><span class="error-msg">Please add a link</span>
@@ -65,29 +66,7 @@
                 <button type="submit" id="submit-btn">Shorten it!</button>
               </form>
             </div>
-            <ul>
-              <li class="link">
-                <span class="original-link">https://frontendmentor.io</span>
-                <div class="result">
-                  <span>https://rel.ink/k4lKyk</span>
-                  <button class="copy-btn">Copy</button>
-                </div>
-              </li>
-              <li class="link">
-                <span class="original-link">https://frontendmentor.io</span>
-                <div class="result">
-                  <span>https://rel.ink/k4lKyk</span>
-                  <button class="copy-btn">Copy</button>
-                </div>
-              </li>
-              <li class="link">
-                <span class="original-link">https://frontendmentor.io</span>
-                <div class="result">
-                  <span>https://rel.ink/k4lKyk</span>
-                  <button class="copy-btn">Copy</button>
-                </div>
-              </li>
-            </ul>
+            <ul class="links-container"></ul>
           </section>
           <section class="advanced-stats">
             <header>
@@ -153,5 +132,6 @@
         </p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

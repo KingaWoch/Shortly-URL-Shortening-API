@@ -263,6 +263,10 @@ input.invalid::placeholder {
   border-radius: 0.4rem;
 }
 
+.copy-btn.copied {
+  background-color: var(--Dark-Violet);
+}
+
 /* ADVANCED STATS SECTION */
 
 .advanced-stats {
