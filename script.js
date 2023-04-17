@@ -59,3 +59,12 @@ const renderOutput = (input, shortenUrl) => {
   };
   copyBtn.addEventListener("click", copyLink);
 };
+
+// DROPDOWN MENU
+
+const mobileMenuBtn = document.querySelector(".mobile-menu");
+const mobileNav = document.querySelector(".nav-wrapper");
+
+mobileMenuBtn.addEventListener("click", () => {
+  mobileNav.classList.toggle("open");
+});
